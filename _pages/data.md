@@ -37,4 +37,4 @@ The full set of files, in order of use, is as follows:
 23. **Word2Vec_models.zip:** Archived version of the saved Word2Vec models, both unaligned and aligned.
 24. **08 Word2Vec work with aligned models.py:** Python script which loads the trained Word2Vec models to trace the development of the embeddings for the terms “sustainability” and “profitability” over time.
 25. **99 Scrape further levels down.py:** Python script that can be used to generate a list of unscraped URLs from the pages that themselves were one level deeper than the front page.
-**26. URLs_2_deeper.csv:** CSV file containing unscraped URLs from the pages that themselves were one level deeper than the front page.
+26. URLs_2_deeper.csv:** CSV file containing unscraped URLs from the pages that themselves were one level deeper than the front page.
