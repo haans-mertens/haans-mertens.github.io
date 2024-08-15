@@ -1,5 +1,5 @@
 ---
-permalink: code/code_script1/
+permalink: /code/code_script1/
 title: "01 Collect frontpages.py"
 author_profile: false
 redirect_from: 
