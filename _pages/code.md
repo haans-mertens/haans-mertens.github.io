@@ -13,7 +13,7 @@ Summary
 ======
 The core set-up is as follows:
 1. Create empty folders called 'HTML', 'TXT_uncleaned, ‘TXT_cleaned’ and 'TXT_combined'.
-2. Run the [‘01 Collect frontpages.py’](https://haans-mertens.github.io/code/code_script1) script to collect the frontpages.
+2. Run the [‘01 Collect frontpages.py’](https://raw.githubusercontent.com/haans-mertens/haans-mertens.github.io/master/_pages/01%20Collect%20frontpages.py) script to collect the frontpages.
 3. Run the ‘02 Collect further pages.py’ script to collect all pages one click deeper on the domain.
 4. Archive the files in the 'HTML' folder to a .zip file called 'HTML.zip'.
 5. Run the ‘03 Convert HTML to plaintext.py’ script to process the files in ‘HTML.zip’.
