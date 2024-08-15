@@ -1,9 +1,9 @@
 ---
-permalink: /code_script1/
+permalink: code/code_script1/
 title: "01 Collect frontpages.py"
 author_profile: false
 redirect_from: 
-  - /code_script1.html
+  - /code/code_script1.html
 ---
 
 import pandas as pd
