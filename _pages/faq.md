@@ -5,9 +5,6 @@ author_profile: false
 redirect_from: 
   - /faq.html
 ---
-
-Frequently Asked Questions
-======
 > 1:	Do the URLs in weburl_forscraper have to be in a specific format?
 No; the code will standardize URLs into the following format: https://www.URL.  
 
