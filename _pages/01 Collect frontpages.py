@@ -1,3 +1,11 @@
+---
+permalink: /code_script1/
+title: "01 Collect frontpages.py"
+author_profile: false
+redirect_from: 
+  - /code_script1.html
+---
+
 import pandas as pd
 import numpy as np
 import requests
