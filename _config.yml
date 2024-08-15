@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Haans & Martens: Code- and database repository"
+title                    : "Haans & Mertens: Code- and database repository"
 title_separator          : "-"
 name                     : &name "Richard Haans & Marc Mertens"
 description              : &description "personal description"
