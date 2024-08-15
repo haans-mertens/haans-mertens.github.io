@@ -5,8 +5,6 @@ author_profile: false
 redirect_from: 
   - /code.html
 ---
-About the codebase
-======
 The following contains the most up-to-date version of our codebase to scrape longitudinal organizational website data using the Wayback Machine. Before running any code, please read through the entire documentation provided, below. For frequently asked questions about the code- and database please see the FAQ documentation.
 
 The set-up should work as-is after extracting the content of the .zip file into a folder (which can be located anywhere). Also note that the script will assume that the working directory is the same as the directory in which the scripts are located. The code has some checks built in to ensure this.
