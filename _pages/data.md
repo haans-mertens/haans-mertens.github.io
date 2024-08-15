@@ -1,9 +1,8 @@
 ---
-permalink: /
+permalink: /data/
 title: "CompuCrawl database"
 author_profile: false
 redirect_from: 
-  - /data/
   - /data.html
 ---
 This folder contains the full set of code and data for the CompuCrawl database. The database contains the archived websites of publicly traded North American firms listed in the Compustat database between 1996 and 2020—representing 11,277 firms with 86,303 firm/year observations and 1,617,675 webpages in the final cleaned and selected set.
