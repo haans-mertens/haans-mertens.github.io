@@ -9,4 +9,7 @@ main:
     url: /code/
 
   - title: "CompuCrawl Database"
-    url: /compucrawl/
+    url: /data/
+    
+  - title: "FAQ"
+    url: /faq/
