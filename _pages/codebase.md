@@ -1,9 +1,8 @@
 ---
-permalink: /code
+permalink: /code/
 title: "Codebase"
 author_profile: false
 redirect_from: 
-  - /code/
   - /code.html
 ---
 
