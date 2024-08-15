@@ -1,5 +1,5 @@
 ---
-permalink: /
+permalink: /code
 title: "Codebase"
 author_profile: false
 redirect_from: 
