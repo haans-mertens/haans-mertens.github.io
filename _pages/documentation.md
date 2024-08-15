@@ -1,5 +1,5 @@
 ---
-permalink: /code/documentation
+permalink: /code/documentation/
 title: "Codebase: Documentation"
 author_profile: false
 redirect_from: 
