@@ -3,8 +3,8 @@ permalink: /
 title: "Codebase"
 author_profile: false
 redirect_from: 
-  - /codebase/
-  - /codebase.html
+  - /code/
+  - /code.html
 ---
 
 This is a test.
