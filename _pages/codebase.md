@@ -5,9 +5,6 @@ author_profile: false
 redirect_from: 
   - /code.html
 ---
-
-This is a test.
-
 About the codebase
 ======
 The following contains the most up-to-date version of our codebase to scrape longitudinal organizational website data using the Wayback Machine. Before running any code, please read through the entire documentation provided, below. For frequently asked questions about the code- and database please see the FAQ documentation.
