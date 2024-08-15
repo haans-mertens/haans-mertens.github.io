@@ -12,9 +12,9 @@ title                    : "Haans & Martens: Code- and database repository"
 title_separator          : "-"
 name                     : &name "Richard Haans & Marc Mertens"
 description              : &description "personal description"
-url                      : https://haans_mertens.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://haans-mertens.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "haans_mertens/haans_mertens.github.io"
+repository               : "haans-mertens/haans-mertens.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
