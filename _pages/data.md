@@ -1,16 +1,22 @@
 ---
 permalink: /data/
-title: "CompuCrawl database"
+title: "*CompuCrawl* database"
 author_profile: false
 redirect_from: 
   - /data.html
 ---
-This folder contains the full set of code and data for the CompuCrawl database. The database contains the archived websites of publicly traded North American firms listed in the Compustat database between 1996 and 2020—representing 11,277 firms with 86,303 firm/year observations and 1,617,675 webpages in the final cleaned and selected set.
+This page contains the complete code and data for the CompuCrawl database, which includes archived websites of publicly traded North American firms listed in the Compustat database between 1996 and 2020. The database encompasses 11,277 firms with 86,303 firm/year observations and 1,617,675 webpages in the final cleaned and selected set.
 
-For those only interested in downloading the final database of texts, the files ["HTML.zip"](https://www.dropbox.com/scl/fi/sadofeczgvw5iqd58u4dh/HTML.zip?rlkey=zau82qcgqa0weieysqp66q4sm&dl=0), ["TXT_uncleaned.zip"](https://www.dropbox.com/scl/fi/qdjm2cie9r64vhmdsa3jv/TXT_uncleaned.zip?rlkey=19na0vi9rf2hxs2m4ga8d2lht&dl=0), ["TXT_cleaned.zip"](https://www.dropbox.com/scl/fi/vxrun4k5zprqc2zl5gj9d/TXT_cleaned.zip?rlkey=nmbh3n5p24ebs887yzri4fxu0&dl=0), and ["TXT_combined.zip"](https://www.dropbox.com/scl/fi/nyz23wc5b8zml7zyijicd/TXT_combined.zip?rlkey=tg5ywz7m0pght589xxuwj1nqp&dl=0) contain the full set of HTML pages, the processed but uncleaned texts, the selected and cleaned texts, and combined and cleaned texts at the GVKEY/year level, respectively.
+Final database files
+======
+If you are interested in the final database of texts, the following files are available:
+- ["HTML.zip"](https://www.dropbox.com/scl/fi/sadofeczgvw5iqd58u4dh/HTML.zip?rlkey=zau82qcgqa0weieysqp66q4sm&dl=0): Contains the full set of HTML pages.
+- ["TXT_uncleaned.zip"](https://www.dropbox.com/scl/fi/qdjm2cie9r64vhmdsa3jv/TXT_uncleaned.zip?rlkey=19na0vi9rf2hxs2m4ga8d2lht&dl=0): Includes processed but uncleaned text files.
+- ["TXT_cleaned.zip"](https://www.dropbox.com/scl/fi/vxrun4k5zprqc2zl5gj9d/TXT_cleaned.zip?rlkey=nmbh3n5p24ebs887yzri4fxu0&dl=0): Contains selected and cleaned text files.
+- ["TXT_combined.zip"](https://www.dropbox.com/scl/fi/nyz23wc5b8zml7zyijicd/TXT_combined.zip?rlkey=tg5ywz7m0pght589xxuwj1nqp&dl=0): Includes combined and cleaned text files at the GVKEY/year level. 
 
-The files are ordered by moment of use in the work flow. For example, the first file in the list is the input file for code files 01 and 02, which create and update the two tracking files "scrapedURLs.csv" and "URLs_1_deeper.csv" and which write HTML files to its folder. "HTML.zip" is the resultant folder, converted to .zip for ease of sharing. Code file 03 then reads this .zip file and is therefore below it in the ordering.
-
+Full workflow and file descriptions
+======
 The full set of files, in order of use, is as follows:
 1. [**Compustat_2021.xlsx:**](https://www.dropbox.com/scl/fi/nccafl7omgebgpcfyz4jt/Compustat_2021.xlsx?rlkey=e0m1y2vrop2jdcg79czxt1df8&dl=0) The input file containing the URLs to be scraped and their date range.
 2. [**01 Collect frontpages.py:**](https://www.dropbox.com/scl/fi/x1ol9yk0794ayqlse9hsa/01-Collect-frontpages.py?rlkey=ty7hm1pmq9j9oajd6hj73v010&dl=0) Python script scraping the front pages of the list of URLs and generating a list of URLs one page deeper in the domains.
@@ -22,9 +28,9 @@ The full set of files, in order of use, is as follows:
 8. [**TXT_uncleaned.zip:**](https://www.dropbox.com/scl/fi/qdjm2cie9r64vhmdsa3jv/TXT_uncleaned.zip?rlkey=19na0vi9rf2hxs2m4ga8d2lht&dl=0) Archived version of the converted yet uncleaned plaintext files.
 9. [**input_categorization_allpages.csv:**](https://www.dropbox.com/scl/fi/qsf7vfh1vjt9fgazhqb8e/input_categorization_allpages.csv?rlkey=zoeuci4iyehbus0tkphriy8f1&dl=0) Input file for classification of pages using GPT according to their HTML title and URL.
 10. [**04 GPT application.py:**](https://www.dropbox.com/scl/fi/tr0c32gkzbzvgpi4119w2/04-GPT-application.py?rlkey=fdza2kyk9f0lncd98ro7nkjy0&dl=0) Python script using OpenAI’s API to classify selected pages according to their HTML title and URL.
-11. [**categorization_applied.csv:**](https://www.dropbox.com/scl/fi/4dkhnlyt179zg15cu7ry4/categorization_applied.csv?rlkey=uaixtzi7kn1yc21bi915sbkpe&dl=0) Output file containing classification of selected pages.
+11. [**categorization_applied.csv:**](https://www.dropbox.com/scl/fi/4dkhnlyt179zg15cu7ry4/categorization_applied.csv?rlkey=uaixtzi7kn1yc21bi915sbkpe&dl=0) Output file containing the classification of the selected pages.
 12. [**exclusion_list.xlsx:**](https://www.dropbox.com/scl/fi/4jkx0vdyzqqvjgle8ggp4/exclusion_list.xlsx?rlkey=z7jem35kxqf98slq6lxpq3h2l&dl=0) File containing three sheets: 'gvkeys' containing the GVKEYs of duplicate observations (that need to be excluded), 'pages' containing page IDs for pages that should be removed, and 'sentences' containing (sub-)sentences to be removed.
-13. [**05 Clean and select.py:**](https://www.dropbox.com/scl/fi/79twj2473nt2povjmjtds/05-Clean-and-select.py?rlkey=0dvugjyg0jxch8hx4xsdpp8k3&dl=0) Python script applying data selection and cleaning (including selection based on page category), with setting and decisions described at the top of the script. This script also combined individual pages into one combined observation per GVKEY/year.
+13. [**05 Clean and select.py:**](https://www.dropbox.com/scl/fi/79twj2473nt2povjmjtds/05-Clean-and-select.py?rlkey=0dvugjyg0jxch8hx4xsdpp8k3&dl=0) Python script applying data selection and cleaning (including selection based on page category), with setting and decisions described at the top of the script. This script also combines individual pages into one combined observation per GVKEY/year.
 14. [**metadata.csv:**](https://www.dropbox.com/scl/fi/79twj2473nt2povjmjtds/05-Clean-and-select.py?rlkey=0dvugjyg0jxch8hx4xsdpp8k3&dl=0) Metadata containing information on all processed HTML pages, including those not selected.
 15. [**TXT_cleaned.zip:**](https://www.dropbox.com/scl/fi/vxrun4k5zprqc2zl5gj9d/TXT_cleaned.zip?rlkey=nmbh3n5p24ebs887yzri4fxu0&dl=0) Archived version of the selected and cleaned plaintext page files. This file serves as input for the word embeddings application.
 16. [**TXT_combined.zip:**](https://www.dropbox.com/scl/fi/nyz23wc5b8zml7zyijicd/TXT_combined.zip?rlkey=tg5ywz7m0pght589xxuwj1nqp&dl=0) Archived version of the combined plaintext files at the GVKEY/year level. This file serves as input for the data description using topic modeling.
