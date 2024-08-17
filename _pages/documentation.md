@@ -6,7 +6,7 @@ redirect_from:
   - /code/documentation.html
 ---
 
-The set-up should work as-is after extracting the content of the .zip file (accessible [here](https://github.com/haans-mertens/haans-mertens.github.io/raw/master/_pages/General%20purpose%20set-up.zip) into a folder (which can be located anywhere). Also note that the script will assume that the working directory is the same as the directory in which the scripts are located. The code has some checks built in to ensure this.
+The set-up should work as-is after extracting the content of the following [.zip file](https://github.com/haans-mertens/haans-mertens.github.io/raw/master/_pages/General%20purpose%20set-up.zip) into a folder (which can be located anywhere). Also note that the script will assume that the working directory is the same as the directory in which the scripts are located. The code has some checks built in to ensure this.
 
 The set-up only works when following the steps, below, in exact order. 
 
