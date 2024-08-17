@@ -20,4 +20,4 @@ Setup instructions
 9. Archive the files in the 'TXT_uncleaned folder to a .zip file called 'TXT_uncleaned.zip'.
 10. Run the [‘05 Clean and select.py’](https://raw.githubusercontent.com/haans-mertens/haans-mertens.github.io/master/_pages/05%20Clean%20and%20select.py) script to clean and select the texts, placing them in the ‘TXT_cleaned’ folder. This script also combines the selected pages into a single plaintext file per firm/year in the ‘TXT_combined’ folder.
 
-From there, you can work with the texts in the ‘TXT_cleaned’ and 'TXT_combined' folders in further analyses. The various metadata files that get created can be used to summarize the data or can serve as input in analyses.
+From there, you can use the texts in the ‘TXT_cleaned’ and ‘TXT_combined’ folders for further analyses. The generated metadata files can be used to summarize the data or as input for additional analyses.
