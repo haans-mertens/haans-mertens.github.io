@@ -45,7 +45,7 @@ years = list(range(1996,2021,1))
 
 ###########################################                                
 # Read the input data from Compustat
-df = pd.read_excel("00 urls_in.xlsx", sheet_name='urls')
+df = pd.read_excel("00 urls_in.xlsx", sheet_name='urls',converters={'gvkey':str})
 df['weburl'].replace('', np.nan, inplace=True)
 df.dropna(subset=['weburl'], inplace=True)
 
