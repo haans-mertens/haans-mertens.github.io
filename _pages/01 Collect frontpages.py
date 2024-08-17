@@ -104,8 +104,6 @@ with open("scrapedURLs.csv", "a", encoding="utf-8", newline='') as scrapefile:
 
                     gvkey = row['gvkey']
                     gvkey = str(gvkey)
-                    # Make sure gvkey has the leading zeroes.
-                    gvkey = gvkey.zfill(6)
                                                     
                     # Check if the url can be normalized; if not, skip and document.
                     try:
