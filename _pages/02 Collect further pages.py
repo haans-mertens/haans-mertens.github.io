@@ -31,7 +31,7 @@ except IOError:
 
 ###########################################
 # Read the input data (the full list of one click deeper).
-df = pd.read_csv("URLs_1_deeper.csv", low_memory=False)
+df = pd.read_csv("URLs_1_deeper.csv", low_memory=False, , converters={'gvkey': str})
 # If you want to make a selection of years, uncomment the following:
 # df = df[(df['year'].astype(int) > 2013)]
 print("Data loaded")
@@ -61,7 +61,6 @@ with open("scrapedURLs.csv", "a", encoding="utf-8", newline='') as file:
                     # Read relevant data from the row.
                     year = row['year']
                     gvkey = row['gvkey']
-                    # Make sure that the gvkey has leading zeroes.
                     gvkey = str(gvkey)
 
                     # We take as the reference point the middle day in the year.
