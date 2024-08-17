@@ -63,7 +63,6 @@ with open("scrapedURLs.csv", "a", encoding="utf-8", newline='') as file:
                     gvkey = row['gvkey']
                     # Make sure that the gvkey has leading zeroes.
                     gvkey = str(gvkey)
-                    gvkey = gvkey.zfill(6)
 
                     # We take as the reference point the middle day in the year.
                     # This will ensure that if there is any page in the year that it will be grabbed.
